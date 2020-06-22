@@ -1,0 +1,360 @@
+:root {
+    // Darkly Bootswatch Colors
+    --info: #3498DB;
+    --danger: #E74C3C;
+    --success: #00bc8c;
+    --warning: #F39C12;
+    --primary: #375a7f;
+    --secondary: #444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', 'sans-serif';
+}
+
+// NAVBAR
+#navbar {
+    #profile-pic {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 0.5rem;
+        border-radius: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .navbar-brand:hover {
+        color: rgb(152, 196, 236) !important;
+
+        #profile-pic {
+            border: 2px solid rgba(152, 196, 236, 0.8);
+        }
+    }
+
+    .nav-link {
+        text-shadow: 0px 2px 2px rgba(79, 80, 107, 0.5);
+    }
+
+    .nav-link:hover {
+        color: rgba(152, 196, 236, 0.8) !important;
+    }
+
+    .navbar-toggler:hover {
+        background-color: rgba(255,255,255,0.3);
+        transition: background-color 0.15s ease-in-out;
+    }
+}
+
+// SHOWCASE
+#showcase {
+    position: relative;
+    background: url("./img/bg/background.png") no-repeat center right / cover;
+    height: 100vh;
+    font-family: 'Raleway', 'sans-serif';
+
+    .overlay-shadow {
+        background: rgba(79, 80, 107, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-content {
+        font-size: 5rem;
+        padding-top: 20rem;
+    }
+}
+
+// ABOUT
+#about-header {
+    position: relative;
+    min-height: 200px;
+    background: url("./img/bg/background2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+// EXPERIENCE
+#experience-header {
+    position: relative;
+    min-height: 200px;
+    background: url("./img/bg/background3.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+// PROJECTS
+#projects-header {
+    position: relative;
+    min-height: 200px;
+    background: url("./img/bg/background4.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+// Bars
+.bar {
+    overflow: hidden;
+    height: 15px;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.bar-50 {
+    height: 100%;
+    width: 50%;
+    background-color: var(--warning);
+    animation-name: barfill-50;
+    animation-duration: 5s;
+}
+
+.bar-60 {
+    height: 100%;
+    width: 60%;
+    background-color: var(--primary);
+    animation-name: barfill-60;
+    animation-duration: 5s;
+}
+
+.bar-70 {
+    height: 100%;
+    width: 70%;
+    background-color: var(--primary);
+    animation-name: barfill-70;
+    animation-duration: 5s;
+}
+
+.bar-80 {
+    height: 100%;
+    width: 80%;
+    background-color: var(--success);
+    animation-name: barfill-80;
+    animation-duration: 5s;
+}
+
+.bar-90 {
+    height: 100%;
+    width: 90%;
+    background-color: var(--info);
+    animation-name: barfill-90;
+    animation-duration: 5s;
+}
+
+.bar-100 {
+    height: 100%;
+    width: 100%;
+    background-color: var(--info);
+    animation-name: barfill-100;
+    animation-duration: 5s;
+}
+
+// CARDS
+.card {
+    height: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: rgb(94, 93, 93) !important;
+    transform: scale(1.01);
+    box-shadow: 0px 5px 10px var(--primary);
+}
+
+// MODALS
+.modal {
+    animation-name: modalopen;
+    animation-duration: 0.1s;
+}
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0 !important;
+}
+
+body:not(.modal-open){
+    padding-right: 0px !important;
+}
+
+
+// MISC
+.underline-y {
+    height: 2px;
+    width: 25rem;
+    background: #ffbc00;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.br-y {
+    border-right: 1px solid #ffbc00;
+}
+
+.hr-w {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+.btn:active {
+    transform: scale(0.99) translate(0, 1px);
+}
+
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+// MEDIA QUERIES
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+@media (max-width: 575px){
+    #showcase {
+        .title-content {
+            font-size: 2rem;
+            padding-top: 30%;
+        }
+    }
+    .underline-y {
+        height: 2px;
+        width: 10rem;
+        background: #ffbc00;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .br-y {
+        border-right: rgba(255, 255, 255, 0);
+    }
+}
+
+@media(min-width: 576px){
+    #showcase {
+        .title-content {
+            font-size: 3rem;
+            padding-top: 25%;
+        }
+    }
+
+    .br-y {
+        border-right: rgba(255, 255, 255, 0);
+    }
+
+    .underline-y {
+        height: 2px;
+        width: 10rem;
+        background: #ffbc00;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media (min-width: 992px){
+    #showcase {
+        .title-content {
+            font-size: 5rem;
+            padding-top: 20rem;
+        }
+    }
+    .underline-y {
+        height: 2px;
+        width: 25rem;
+        background: #ffbc00;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .br-y {
+        border-right: 1px solid #ffbc00;
+    }
+}
+
+// ANIMATION KEYFRAMES
+@keyframes modalopen{
+    from {
+        transform: translateY(-4rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes barfill-50{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+@keyframes barfill-60{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+@keyframes barfill-70{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+@keyframes barfill-80{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+@keyframes barfill-90{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+@keyframes barfill-100{
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

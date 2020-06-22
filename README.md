@@ -1,2 +1,2 @@
 # portfolio-pgarza.com
-Portfolio website
+My portfolio website, built with vanilla HTML/CSS/JS and Bootstrap 4.
